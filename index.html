@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS e-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+<!--ESERCIZIO 1: Inserisci un tag H1 con il nome del tuo negozio -->
+    <h1 id="shop-name">JS Hi-Fi&Co.</h1>
+    <button class="button-style" type="button" onclick="changeName ()">Clicca qui per cambiare l'H1</button>
+    <button class="button-style" type="button" onclick="changeBackColor ()">Clicca qui per cambiare colore allo sfondo</button>
+
+<!--ESERCIZIO 2: Aggiungi una tabella con i 5 prodotti più in vista del tuo negozio -->
+    <table class="table-layout">
+        <tr>
+            <td>
+<!--ESERCIZIO 3: Aggiungi per ogni prodotto un'immagine, un titolo, una descrizione e un prezzo -->
+<!--ESERCIZIO 4: Per ogni elemento aggiungi anche un link di Amazon al prodotto esistente -->
+                <img src="assets/product1.jpg" alt="cassa hi-fi Vulkkano">
+                <h3>Cassa amplificata con Woofer</h3>
+                <span>Il design elegante e minimalista e le dimensioni di questo sistema audio si adattano perfettamente
+                    a qualsiasi ambiente della casa. Il woofer da 5,25" offre un impatto profondo sui bassi,
+                    per ogni tipologia di ascolto!
+                 </span>
+                 <h4 class="price">139,99 euro</h4>
+                 <a class="link-to" href="https://www.amazon.it/VULKKANO-Amplificata-Bluetooth-Subwoofer-Elegante/dp/B09XHNH7MY">Dettagli</a> 
+            </td>
+            <td>
+                <img src="assets/product2.jpg" alt="giradischi vinile Mersoco">
+                <h3>Giradischi con altoparlanti incorporati</h3>
+                <span>Facile da trasportare ovunque con il design a valigetta e la possibilità di connettere smartphone, PC
+                    e cuffie. Possiede tre impostazioni di velocità e l'adattatore 45 rpm è incluso!
+                 </span>
+                 <h4 class="price">50,39 euro</h4>
+                 <a class="link-to" href="https://www.amazon.it/Giradischi-Portatile-Altoparlanti-Incorporati-Bluetooth/dp/B07RGW67H5">Dettagli</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="assets/product3.jpg" alt="cuffie wireless Sony">
+                <h3>Cuffie Wireless Sony</h3>
+                <span>Qualità audio premium: supportano Hi-Res Audio e ottimizzano i file musicali 
+                    compressi tramite la nuova tecnologia DSEE Extreme. Si spengono da sole quando non le indossi!
+                 </span>
+                 <h4 class="price">199 euro</h4>
+                 <a class="link-to" href="https://www.amazon.it/Sony-WH-1000XM4-Cancelling-Phone-Call-Built/dp/B08C7KCJF5">Dettagli</a> 
+            </td>
+            <td>
+                <img src="assets/product4.jpg" alt="stereo Pure">
+                <h3>Stereo tutto in uno</h3>
+                <span>Questo splendido e potente impianto stereo con una raffinata finitura in legno dà vita a tutta
+                    la TUA musica preferita e Ti offre la possibilità di scegliere tra radio DAB+ e FM, funzionamento con CD e Bluetooth!
+                 </span>
+                 <h4 class="price">308,50 euro</h4>
+                 <a class="link-to" href="https://www.amazon.it/Pure-C-D6-musicale-CD-Player-Bluetooth/dp/B017P8IRH2?th=1">Dettagli</a> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="assets/product5.jpg" alt="cassa bluetooth Marshall">
+                <h3>Altoparlante bluetooth Marshall</h3>
+                <span>Il modello più piccolo e recente della gamma MarshallIl Bluetooth 5.0 offre un suono wireless superiore, 
+                    arrivando fino ad un raggio di 10 metri!
+                 </span>
+                 <h4 class="price">174,49 euro</h4>
+                 <a class="link-to" href="https://www.amazon.it/Marshall-Acton-II-Altoparlante-Bluetooth/dp/B07HPP9BRP">Dettagli</a> 
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    <button class="button-style" type="button" onclick="addClassTo()">Clicca qui per aggiungere la classe al link</button>
+    <button class="button-style" type="button" onclick="addClassHidden ()">Clicca qui per nascondere le immagini</button>
+    <button class="button-style" type="button" onclick="changePriceColor ()">Clicca qui per cambiare colore ai prezzi</button>
+
+<!--ESERCIZIO 6: Aggiungi un campo testuale in cui l'utente può lasciare un commento su un prodotto -->
+    <textarea name="comment" id="commentArea" cols="60" rows="7">Lascia qui un tuo commento!</textarea>
+
+<!--ESERCIZIO 5: Aggiungi un footer con il nome e l'indirizzo del tuo negozio -->
+    <footer>
+        <div id="recap">
+            <span>JS Hi-Fi&Co</span>
+            <address id="my-address">via Della Scala, 1 - 00032 Roma </address>
+        </div>
+        <button class="button-style" type="button" onclick="changeAddress ()">Clicca qui per vedere il nuovo indirizzo</button>
+    </footer>
+
+    <script src="code.js"></script>
+</main>
+
+</body>
+</html>
